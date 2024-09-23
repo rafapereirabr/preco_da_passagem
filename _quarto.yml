@@ -1,0 +1,67 @@
+project:
+  type: website
+  output-dir: docs
+
+about:
+  template: solana
+  # links:
+  #   - icon: twitter
+  #     text: twitter
+  #     href: https://x.com/UrbanDemog
+  #   - icon: github
+  #     text: Github
+  #     href: https://github.com/ipeaGIT/access_workshop_WSTLUR_2024
+
+execute:
+  freeze: auto
+
+lang: en
+website:
+  title: "O preço da passagem aérea no Brasil"
+  favicon: /images/favicon.png
+  site-url: https://rafapereirabr.github.io/preco_da_passagem/
+  repo-url: https://github.com/rafapereirabr/preco_da_passagem
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        href: index.qmd
+      - sobre.qmd
+    search: true
+    tools: 
+      - icon: github
+        text: Github
+        href: https://github.com/rafapereirabr/preco_da_passagem
+      - icon: twitter
+        text: twitter
+        href: https://x.com/UrbanDemog
+
+page-navigation: true
+page-footer: 
+  border: false
+  left: "Copyright 2024, Rafael H. M. Pereira" 
+  right: 
+    - icon: github
+      href: https://github.com/rafapereirabr/preco_da_passagem
+
+
+format:
+  html:
+    grid:
+      sidebar-width: 100px
+      body-width: 1100px
+      margin-width: 100px
+    theme:
+      light: cosmo
+      dark: slate
+    css: styles.css
+    toc: true
+
+
+editor: source
+
+editor_options:
+  markdown:
+    wrap: 72
+    canonical: true
+

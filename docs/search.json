@@ -1,0 +1,26 @@
+[
+  {
+    "objectID": "sobre.html",
+    "href": "sobre.html",
+    "title": "Sobre",
+    "section": "",
+    "text": "Sobre\n Análise gerada a partir de dados oficiais da ANAC. Dados extraídos com o pacote de R {flightsbr} e processados pelo autor em R.\nAutor: Rafael H. M. Pereira  Coordenador de Ciência de Dados  Instituto de Pesquisa Econômica Aplicada (Ipea)  Website | Google Scholar | Twitter | Linkedin |\nBio: Rafael H. M. Pereira é pesquisador sênior nas áreas de planejamento urbano, ciência de dados espaciais e mobilidade urbana no Instituto de Pesquisa Econômica Aplicada (Ipea). Sua pesquisa investiga como as políticas urbanas e tecnologias moldam a organização espacial das cidades, a mobilidade humana, bem como seus impactos nas desigualdades sociais e de saúde. Algumas de suas contribuições nos campos de urban analytics e planejamento envolvem o desenvolvimento de novos métodos e ferramentas computacionais de código aberto para o estudo de sistemas urbanos e redes de transporte. Essas contribuições partem de interesses substantivos sobre questões de equidade no planejamento urbano, desigualdades de acesso a oportunidades, e dos impactos ambientais gerados pelo ambiente construído e por padrões de mobilidade. Com graduação em sociologia pela UnB e mestrado em demografia pela Unicamp, Rafael Pereira obteve seu PhD em geografia pela Universidade de Oxford."
+  },
+  {
+    "objectID": "sobre.html#fonte-dados",
+    "href": "sobre.html#fonte-dados",
+    "title": "Sobre:",
+    "section": "",
+    "text": "ANAC\nCriado com dados da ANAC acessados pelo pacote {flightsbr}\n\n\n\n\nImage 1",
+    "crumbs": [
+      "Sobre"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "O preço da passagem aérea no Brasil.",
+    "section": "",
+    "text": "Site-teste\n\n\n\n\n\n\nEste site mosta o preço da passagem área (ida + volta) dos 100 trechos com maior demanda do Brasil.\n\n\n\nValores em R$ referente aos meses de print(last_two_monts[1]) e print(last_two_monts[2])"
+  }
+]
