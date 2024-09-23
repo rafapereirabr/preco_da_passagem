@@ -1,0 +1,19 @@
+{
+  "hash": "2c9dc292f334b184145c481c62dc0af5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"O preço da passagem aérea no Brasil.\"\n---\n\n::: {.cell}\n\n:::\n\n\n\n\nSite-teste\n\n::: {.callout-note appearance=\"simple\"}\nEste site mosta o preço da passagem área (ida + volta) dos 100 trechos com maior demanda do Brasil. Valores em R$ referente aos meses de `Junho` e `Julho` de 2024.\n:::\n\n\n\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n```{=html}\n<div id=\"htmlwidget-8c967a6577973b8c8deb\" style=\"width:100%;height:480px;\" class=\"quak html-widget\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-8c967a6577973b8c8deb\">{\"x\":{\"name\":\"df_output\"},\"evals\":[],\"jsHooks\":[]}</script>\n```\n\n:::\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"site_libs/htmlwidgets-1.6.4/htmlwidgets.js\"></script>\n<script src=\"site_libs/quak-0.1.0/quak_htmlwidget.js\"></script>\n<script src=\"site_libs/quak-binding-0.0.0.9000/quak.js\"></script>\n<link id=\"df_output-1-attachment\" rel=\"attachment\" href=\"site_libs/df_output-1/file1ec0206144d2.parquet\"/>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
