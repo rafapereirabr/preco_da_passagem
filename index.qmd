@@ -85,6 +85,11 @@ airports <- flightsbr::read_airports(type = 'public') |>
   janitor::clean_names() |>
   dplyr::select(c('codigo_oaci','municipio_atendido'))
 
+# manually add canoas airport
+airports <- rbind(airports, 
+                   data.frame(codigo_oaci='SBCO', 
+                              municipio_atendido='Canoas')
+                   )
 # head(airports)
 
 
