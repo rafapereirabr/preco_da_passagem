@@ -2,6 +2,7 @@
 title: "O preço da passagem aérea no Brasil."
 ---
 ```{r, warning=FALSE, message=FALSE, echo=FALSE}
+#| label: prepare-data
 # devtools::install_github("ipeaGIT/flightsbr")
 library(flightsbr)
 library(data.table)
@@ -25,6 +26,10 @@ df_dom <- flightsbr::read_airfares(date = last_two_monts) |>
 df_dom[, tarifa := gsub(',', '.', tarifa)]
 df_dom[, tarifa := as.numeric(tarifa)]
 df_dom[, assentos := as.numeric(assentos)]
+```
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+#| label: calculate-rank-and-values
 
 # create unique id for each OD pair
 # so that A-B has the same id as B-A
@@ -65,6 +70,10 @@ df100 <- df[, .(passageiros = sum(passageiros),
                  ),
              by = .(id, ranking)][order(ranking)]
 
+```
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+#| label: prepare-output
 
 # bring OD pair info back
 df100[df_dom_100, on='id', od_pair := i.od_pair ]
@@ -94,7 +103,6 @@ df_airport_codes <- dplyr::tribble(
   "SDAM",	"CPQ",
   "SNRU",	"CAU",
   "SWCA",	"CAF",
-  "SBCA",	"CAC",
   "SWKO",	"CIZ",
   "SBAA",	"CDJ",
   "SBCZ",	"CZS",
@@ -141,12 +149,39 @@ df_airport_codes <- dplyr::tribble(
   "SBTK",	"TRQ",
   "SBTF",	"TFF",
   "SBTE",	"THE",
+  "SBBC",	"QAV",
+  "SBPP",	"PMG",
+  "SBCR",	"CMG",
+  "SBBG",	"BGX",
+  "SBCH",	"XAP",
+  "SBDN",	"PPB",
+  "SBHT",	"ATM",
+  "SBAN",	"APS",
+  "SBAU",	"ARU",
+  "SBAQ",	"AQA",
+  "SBCB",	"CFB",
+  "SBCG",	"CGR",
+  "SBCA",	"CAC",
+  "SBME",	"MEA",
+  "SBPK",	"PET",
+  "SBPJ",	"PMW",
+  "SBPC",	"POO",
+  "SBSJ",	"SJK",
+  "SBQV",	"VDC",
+  "SBMG", "MGF", # maringa
+  "SBLO", "LDB", # londrina
+  "SBIL", "IOS", # ilheus
+  "SBPS", 'BPS', # portoseguro  
+  "SBSR", 'SJP', # sao jose do rio preto
+  "SBMK", 'MOC', # montes calros
+  "SBCO", "QNS", # canoas -----------------------------------
   "SBCY", "CGB", # cuiaba
   "SBPL", "PNZ", # petrolina
   "SBVT", "VIX", # vitoria
   "SBVC", "VDC", # vitoria da consquista
   "SBJU", "JDO", # juazeiro do norte
-  "SBAR", "AJU"  # aracaju
+  "SBAR", "AJU", # aracaju
+  "SBSN", "STM"  # santarem
 )
 
 data.table::setDT(df_airport_codes)
@@ -193,6 +228,7 @@ Este site mosta o preço da passagem área (ida + volta) dos 100 trechos com mai
 
 
 
-```{r, echo=FALSE}
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+#| label: generate-output
 quak::quak(df_output)
 ```
