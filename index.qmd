@@ -202,6 +202,24 @@ df100[airports,
    on=c('destino'='codigo_oaci'),
    c('dest_iata', 'dest_muni') := list(i.iata, i.municipio_atendido )]
 
+# camel case for names 666666666666666666666
+df100[, orig_muni := snakecase::to_title_case(orig_muni, sep_out=' ')]
+df100[, dest_muni := snakecase::to_title_case(dest_muni, sep_out=' ')]
+
+df100[, orig_muni := gsub(" De ", " de ", orig_muni)]
+df100[, orig_muni := gsub(" Da ", " da ", orig_muni)]
+df100[, orig_muni := gsub(" Do ", " do ", orig_muni)]
+df100[, orig_muni := gsub(" Das ", " das ", orig_muni)]
+df100[, orig_muni := gsub(" Dos ", " dos ", orig_muni)]
+
+df100[, dest_muni := gsub(" De ", " de ", dest_muni)]
+df100[, dest_muni := gsub(" Da ", " da ", dest_muni)]
+df100[, dest_muni := gsub(" Do ", " do ", dest_muni)]
+df100[, dest_muni := gsub(" Das ", " das ", dest_muni)]
+df100[, dest_muni := gsub(" Dos ", " dos ", dest_muni)]
+
+
+
 # reorganize origem and destino columns
 df100[, De := paste0(orig_muni," (",orig_iata,")")]
 df100[, Para := paste0(dest_muni," (",dest_iata,")")]
