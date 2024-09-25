@@ -1,9 +1,10 @@
 ---
-title: "O preço da passagem aérea no Brasil."
+title: "Vôos Nacionais"
 ---
-```{r, warning=FALSE, message=FALSE, echo=FALSE}
+```{r, warning=FALSE, message=FALSE, echo=FALSE, eval=ifelse(exists('df_output'),FALSE,TRUE)}
 #| label: prepare-data
-# devtools::install_github("ipeaGIT/flightsbr")
+# remotes::install_github("ipeaGIT/flightsbr")
+# remotes::install_github("timelyportfolio/quak", ref="htmlwidget", subdir="htmlwidget")
 library(flightsbr)
 library(data.table)
 library(janitor)
@@ -28,7 +29,7 @@ df_dom[, tarifa := as.numeric(tarifa)]
 df_dom[, assentos := as.numeric(assentos)]
 ```
 
-```{r, warning=FALSE, message=FALSE, echo=FALSE}
+```{r, warning=FALSE, message=FALSE, echo=FALSE, eval=ifelse(exists('df_output'),FALSE,TRUE)}
 #| label: calculate-rank-and-values
 
 # create unique id for each OD pair
@@ -72,7 +73,7 @@ df100 <- df[, .(passageiros = sum(passageiros),
 
 ```
 
-```{r, warning=FALSE, message=FALSE, echo=FALSE}
+```{r, warning=FALSE, message=FALSE, echo=FALSE, eval=ifelse(exists('df_output'),FALSE,TRUE)}
 #| label: prepare-output
 
 # bring OD pair info back
@@ -179,7 +180,7 @@ df_airport_codes <- dplyr::tribble(
   "SBPS", 'BPS', # portoseguro  
   "SBSR", 'SJP', # sao jose do rio preto
   "SBMK", 'MOC', # montes calros
-  "SBCO", "QNS", # canoas -----------------------------------
+  "SBCO", "QNS", # canoas
   "SBCY", "CGB", # cuiaba
   "SBPL", "PNZ", # petrolina
   "SBVT", "VIX", # vitoria
@@ -230,22 +231,20 @@ df100 <- df100 |> mutate_at(cols, ~round(.,1))
 
 
 # rename and reorder columns
-df_output <- df100 |>
-  select(ranking,
+df_output <- df100[order(ranking)] |>
+  select(Ranking = ranking,
          De,
          Para,
-         total_passageiros = passageiros,
-         q25,
-         media,
-         q75
+         `N. de passageiros` = passageiros,
+         Q25 = q25,
+         Média = media,
+         Q75 = q75
          )
 
 ```
 
-Site-teste
-
 ::: {.callout-note appearance="simple"}
-Este site mosta o preço da passagem área (ida + volta) dos 100 trechos com maior demanda do Brasil. Valores em R$ referente aos meses de `Junho` e `Julho` de 2024.
+Tabela com o preço da passagem área (ida + volta) dos 100 trechos com maior número de passageiros do Brasil. Valores em `R$` atualizados mensalmente a partir de todas passagens comercializadas nos dois meses mais recentes disponíveis: `r last_two_monts[1]` e `r last_two_monts[2]`.
 :::
 
 
@@ -253,5 +252,6 @@ Este site mosta o preço da passagem área (ida + volta) dos 100 trechos com mai
 
 ```{r, warning=FALSE, message=FALSE, echo=FALSE}
 #| label: generate-output
+#| fig-height: 12
 quak::quak(df_output)
 ```

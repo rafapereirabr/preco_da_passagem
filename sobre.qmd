@@ -4,10 +4,15 @@ from: markdown+emoji
 
 # Sobre
 
-![](images/logo_flightsbr.png){width=160 fig-align="right"}
-Análise gerada a partir de dados oficiais da ANAC. Dados extraídos com o pacote de R [**{flightsbr}**](https://ipeagit.github.io/flightsbr/) e processados pelo autor em R.
+![](images/logo_flightsbr.png){width=150 fig-align="right"}
+test
+
+<img align="right" src="images/logo_flightsbr.png?raw=true" alt="logo" width="180"> Análise gerada a partir de dados oficiais da ANAC. Dados extraídos com o pacote [**{flightsbr}**](https://ipeagit.github.io/flightsbr/) e processados em R.
+
+
+**Nota**: Cada par origem-destino é ordenado meramente por ordem alfabética. Assim, o valor da passagem de ida e volta "De: Rio de Janeiro (SDU)	Para: São Paulo (CGH)" pode ser igualmente lido como o preço da viagem de ida e volta no sentido inverso "De: São Paulo (CGH)	Para: Rio de Janeiro (SDU)".
+
+<br>
 
 **Autor: Rafael H. M. Pereira** <br> *Coordenador de Ciência de Dados* <br> Instituto de Pesquisa Econômica Aplicada (Ipea) <br> [Website](https://www.urbandemographics.org/about/) | [Google Scholar](https://scholar.google.com.br/citations?user=dbRivsEAAAAJ&hl)
-| [Twitter](https://x.com/UrbanDemog) | [Linkedin](https://www.linkedin.com/in/rafael-h-m-pereira/) | 
-
-**Bio:** Rafael H. M. Pereira é pesquisador sênior nas áreas de planejamento urbano, ciência de dados espaciais e mobilidade urbana no Instituto de Pesquisa Econômica Aplicada (Ipea). Sua pesquisa investiga como as políticas urbanas e tecnologias moldam a organização espacial das cidades, a mobilidade humana, bem como seus impactos nas desigualdades sociais e de saúde. Algumas de suas contribuições nos campos de urban analytics e planejamento envolvem o desenvolvimento de novos métodos e ferramentas computacionais de código aberto para o estudo de sistemas urbanos e redes de transporte. Essas contribuições partem de interesses substantivos sobre questões de equidade no planejamento urbano, desigualdades de acesso a oportunidades, e dos impactos ambientais gerados pelo ambiente construído e por padrões de mobilidade. Com graduação em sociologia pela UnB e mestrado em demografia pela Unicamp, Rafael Pereira obteve seu PhD em geografia pela Universidade de Oxford.
+| [Twitter](https://x.com/UrbanDemog) | [Linkedin](https://www.linkedin.com/in/rafael-h-m-pereira/) | [BlueSky](https://bsky.app/profile/urbandemog.bsky.social)

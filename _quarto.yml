@@ -24,8 +24,10 @@ website:
   navbar:
     background: primary
     left:
-      - text: "Home"
+      - text: "Vôos Nacionais"
         href: index.qmd
+      - text: "Vôos Internacionais"
+        href: internacionais.qmd
       - sobre.qmd
     search: true
     tools: 
@@ -53,7 +55,7 @@ format:
       margin-width: 100px
     theme:
       light: cosmo
-      dark: slate
+#      dark: solar
     css: styles.css
     toc: true
 

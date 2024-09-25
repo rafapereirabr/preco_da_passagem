@@ -1,1 +1,11 @@
 /* css styles */
+
+/* Custom navbar background color */
+.navbar {
+  background-color: #006890;
+}
+
+body.darkmode {
+  color: #f0f0f0;
+  background-color: #999; /* or any other dark color */
+}
