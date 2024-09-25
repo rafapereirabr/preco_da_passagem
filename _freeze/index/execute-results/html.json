@@ -1,15 +1,15 @@
 {
-  "hash": "0c7a1f5341b7d55c28fe8b4d2974a7e2",
+  "hash": "00c16ce736d87c056aed9250fc4723d4",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Vôos Nacionais\"\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n\n\n::: {.callout-note appearance=\"simple\"}\nTabela com o preço da passagem área (ida + volta) dos 100 trechos com maior número de passageiros do Brasil. Valores em `R$` atualizados mensalmente a partir de todas passagens comercializadas nos dois meses mais recentes disponíveis: 202406 e 202407.\n:::\n\n\n\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n```{=html}\n<div id=\"htmlwidget-9114f8500e3d693ef569\" style=\"width:100%;height:1152px;\" class=\"quak html-widget\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-9114f8500e3d693ef569\">{\"x\":{\"name\":\"df_output\"},\"evals\":[],\"jsHooks\":[]}</script>\n```\n\n:::\n:::",
+    "markdown": "---\ntitle: \"Vôos Nacionais\"\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n\n\n::: {.callout-note appearance=\"simple\"}\nTabela com o preço da passagem área (ida + volta) dos 100 trechos com maior número de passageiros do Brasil. Valores em `R$` atualizados mensalmente a partir de todas passagens comercializadas nos dois meses mais recentes disponíveis: 202406 e 202407.\n:::\n\n\n\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n```{=html}\n<div id=\"htmlwidget-67d3d48667a941d8d238\" style=\"width:100%;height:500px;\" class=\"quak html-widget\"></div>\n<script type=\"application/json\" data-for=\"htmlwidget-67d3d48667a941d8d238\">{\"x\":{\"name\":\"df_output\"},\"evals\":[],\"jsHooks\":[]}</script>\n```\n\n:::\n:::",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
     "includes": {
       "include-in-header": [
-        "<script src=\"site_libs/htmlwidgets-1.6.4/htmlwidgets.js\"></script>\n<script src=\"site_libs/quak-0.1.0/quak_htmlwidget.js\"></script>\n<script src=\"site_libs/quak-binding-0.0.0.9000/quak.js\"></script>\n<link id=\"df_output-1-attachment\" rel=\"attachment\" href=\"site_libs/df_output-1/file2ccc77969ec.parquet\"/>\n"
+        "<script src=\"site_libs/htmlwidgets-1.6.4/htmlwidgets.js\"></script>\n<script src=\"site_libs/quak-0.1.0/quak_htmlwidget.js\"></script>\n<script src=\"site_libs/quak-binding-0.0.0.9000/quak.js\"></script>\n<link id=\"df_output-1-attachment\" rel=\"attachment\" href=\"site_libs/df_output-1/file366c7dd7372a.parquet\"/>\n"
       ]
     },
     "engineDependencies": {},

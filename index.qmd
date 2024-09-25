@@ -253,5 +253,5 @@ Tabela com o preço da passagem área (ida + volta) dos 100 trechos com maior n�
 ```{r, warning=FALSE, message=FALSE, echo=FALSE}
 #| label: generate-output
 #| fig-height: 12
-quak::quak(df_output)
+quak::quak(df_output, height = 500)
 ```
