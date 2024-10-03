@@ -18,6 +18,12 @@ df2 <- unique(df2)
 
 df2 <- filter(df2, iata_code != "\\N")
 
+# bring all nationals
+airports_br <- data.table::fread('./data-raw/airports_bra.csv', encoding = 'UTF-8')
+df2 <- rbind(df2, airports_br)
+df2 <- unique(df2)
+
+
 data.table::fwrite(df2, './data-raw/airports_int.csv', encoding = 'UTF-8')
 
 arrow::write_parquet(df2, './data-raw/airports_int2.parquet')

@@ -2642,7 +2642,7 @@ CHN,Guilin,KWL,ZGKL
 CHN,Nanning,NNG,ZGNN
 CHN,Zhengzhou,CGO,ZHCC
 CHN,Wuhan,WUH,ZHHH
-,Pyongyang,FNJ,ZKPY
+"",Pyongyang,FNJ,ZKPY
 CHN,Lanzhou,LHW,ZLLL
 CHN,Xi'an,XIY,ZLXY
 MNG,Ulan Bator,ULN,ZMUB
@@ -5338,7 +5338,7 @@ RUS,Khandyga,KDY,UEMH
 RUS,Yakutsk,GYG,UEMM
 CHN,Qianjiang,JIQ,ZUQJ
 USA,Lima,AOH,KAOH
-,Hamhung,DSO,ZKSD
+"",Hamhung,DSO,ZKSD
 USA,Brunswick,SSI,KSSI
 USA,Beaver Falls,BFP,KBVI
 USA,Georgetown,GGE,KGGE
@@ -5356,7 +5356,7 @@ AUS,Innisfail,IFL,YIFL
 USA,Kapolei,JRF,PHJR
 AFG,Bamyan,BIN,OABN
 CHN,Baishan,NBS,ZYBS
-,Chongjin,RGO,ZKHM
+"",Chongjin,RGO,ZKHM
 AUS,Moomba,MOO,YOOM
 POL,Lublin,LUZ,EPLB
 USA,East Tawas,ECA,K6D9
@@ -5617,7 +5617,7 @@ CHN,Zhangjiakou,ZQZ,ZBZJ
 CHN,Arxan,YIE,ZBES
 CHN,Hengyang,HNY,ZGHY
 CHN,Ngawa,AHJ,ZUHY
-,Wonsan,WOS,ZKWS
+"",Wonsan,WOS,ZKWS
 RUS,Magas,IGT,URMS
 USA,Talladega,ASN,KASN
 USA,Greenville,GMU,KGMU
@@ -5817,8 +5817,8 @@ HND,Comayagua,XPL,MHSC
 CRI,Upala,UPL,MRUP
 CUB,San Nicolás,QSN,MUNB
 CUB,Pinar Del Rio,SNJ,MUSJ
-SAU,,DWD,OEDM
-SAU,,KMX,OEKM
+SAU,"",DWD,OEDM
+SAU,"",KMX,OEKM
 SAU,Riyadh,XXN,OERY
 IRN,Kangan,KNR,OIBJ
 IRN,Karaj,PYK,OIIP
@@ -5831,8 +5831,8 @@ USA,Wasilla,WWA,PAWS
 JPN,Iwakuni,IWK,RJOI
 JPN,Ie,IEJ,RORE
 PHL,Surallah,AAV,RPMA
-PHL,,BPH,RPMF
-PHL,,MXI,RPMQ
+PHL,"",BPH,RPMF
+PHL,"",MXI,RPMQ
 BRA,Barretos,BAT,SBBT
 BRA,Taubaté,QHP,SBTA
 CHL,Tocopilla,TOQ,SCBE
@@ -5849,57 +5849,57 @@ PER,Rioja,RIJ,SPJA
 PER,Jaén,JAE,SPJE
 KGZ,Tamchy,IKU,UAFL
 RUS,Vilyuisk,VYI,UENW
-RUS,,BGN,UESG
+RUS,"",BGN,UESG
 RUS,Sovetskaya Gavan,GVN,UHKM
 RUS,Nikolayevsk-na-Amure Airport,NLI,UHNN
-RUS,,VLK,URRY
+RUS,"",VLK,URRY
 RUS,Inta,INA,UUYI
 RUS,Zhigansk,ZIX,UWKV
-IND,,RTC,VARG
+IND,"",RTC,VARG
 LKA,Polonnaruwa Town,HIM,VCCH
 IND,Durgapur,RDP,VEDG
 IND,Puttaparthi,PUT,VOPN
 RUS,Smolensk,LNX,XUBS
 AUS,Alpha,ABH,YAPH
-AUS,,ARY,YARA
-AUS,,BLN,YBLA
-AUS,,BZD,YBRN
-AUS,,BWQ,YBRW
-AUS,,CVC,YCEE
-AUS,,CWW,YCOR
-AUS,,CYG,YCRG
-AUS,,CMD,YCTM
-AUS,,DRN,YDBI
+AUS,"",ARY,YARA
+AUS,"",BLN,YBLA
+AUS,"",BZD,YBRN
+AUS,"",BWQ,YBRW
+AUS,"",CVC,YCEE
+AUS,"",CWW,YCOR
+AUS,"",CYG,YCRG
+AUS,"",CMD,YCTM
+AUS,"",DRN,YDBI
 AUS,Deniliquin,DNQ,YDLQ
-AUS,,DYA,YDYS
-AUS,,ECH,YECH
+AUS,"",DYA,YDYS
+AUS,"",ECH,YECH
 AUS,Forbes,FRB,YFBS
-AUS,,GUH,YGDH
-AUS,,HXX,YHAY
-AUS,,HTU,YHPN
-AUS,,KRA,YKER
-AUS,,KPS,YKMP
-AUS,,KGY,YKRY
+AUS,"",GUH,YGDH
+AUS,"",HXX,YHAY
+AUS,"",HTU,YHPN
+AUS,"",KRA,YKER
+AUS,"",KPS,YKMP
+AUS,"",KGY,YKRY
 AUS,Morwell,TGN,YLTV
-AUS,,MRG,YMBA
-AUS,,RPM,YNGU
-AUS,,QRM,YNRM
-AUS,,PPI,YPIR
-AUS,,SIO,YSMI
-AUS,,SNB,YSNB
-AUS,,SWC,YSWL
-AUS,,TYB,YTIB
-AUS,,TUM,YTMU
-AUS,,WGT,YWGT
-AUS,,WKB,YWKB
-AUS,,QRR,YWRN
+AUS,"",MRG,YMBA
+AUS,"",RPM,YNGU
+AUS,"",QRM,YNRM
+AUS,"",PPI,YPIR
+AUS,"",SIO,YSMI
+AUS,"",SNB,YSNB
+AUS,"",SWC,YSWL
+AUS,"",TYB,YTIB
+AUS,"",TUM,YTMU
+AUS,"",WGT,YWGT
+AUS,"",WKB,YWKB
+AUS,"",QRR,YWRN
 AUS,Sale,SXE,YWSL
 AUS,West Wyalong,WWY,YWWL
-AUS,,NGA,YYNG
+AUS,"",NGA,YYNG
 CHN,Guanghua,LHK,ZHGH
 CHN,Shiyan,WDS,ZHSY
 CHN,Mengnai,HTT,ZLHX
-MNG,,UUN,ZMBU
+MNG,"",UUN,ZMBU
 CHN,Bengbu,BFU,ZSBB
 CHN,Rugao,RUG,ZSRG
 CHN,Wuhu,WHU,ZSWU
@@ -6086,7 +6086,7 @@ BRA,COSTA MARQUES,CQS,SWCQ
 AZE,Baku,ZXT,UBTT
 BGR,Yambol,JAM,LBIA
 CHN,Yuanmou,YUA,ZPYM
-CHN,,XEN,ZYXC
+CHN,"",XEN,ZYXC
 CYP,Geçitkale,GEC,LCGK
 TZA,Mbeya,MBI,HTGW
 IDN,Sugapa-Papua Island,UGU,WABV
@@ -6094,3 +6094,409 @@ ISR,Eilat,ETM,LLER
 OMN,Al Masna'ah,MNH,OORQ
 PHL,Cagayan de Oro City,CGY,RPMY
 CHL,Copiapo,CPO,SCAT
+BRA,Conceição do Araguaia,CDJ,SBAA
+BRA,Bauru,"",SBAE
+BRA,Araraquara,AQA,SBAQ
+BRA,Araçatuba,ARU,SBAU
+BRA,Araxá,AAX,SBAX
+BRA,Bagé,BGX,SBBG
+BRA,Bragança Paulista,BJP,SBBP
+BRA,Barra do Garças,BPG,SBBW
+BRA,Caçador,CFC,SBCD
+BRA,Chapecó,XAP,SBCH
+BRA,Forquilhinha,"",SSIM
+BRA,Campos dos Goytacazes,CAW,SBCP
+BRA,Corumbá,CMG,SBCR
+BRA,Caxias do Sul,CXJ,SBCX
+BRA,Cassilândia,"",SSCL
+BRA,Bonito,"",SBDB
+BRA,Presidente Prudente,PPB,SBDN
+BRA,Dourados,"",SBDO
+BRA,Jacareacanga,JCR,SBEK
+BRA,Fernando de Noronha,FEN,SBFN
+BRA,Guajará Mirim,GJM,SBGM
+BRA,Guarulhos,GRU,SBGR
+BRA,Guarapuava,"",SSGG
+BRA,Guaratinguetá,GUJ,SBGW
+BRA,Itacoatiara,ITA,SBIC
+BRA,Ilhéus,IOS,SBIL
+BRA,Santana do Paraíso,IPN,SBIP
+BRA,Jundiaí,QDV,SBJD
+BRA,Juiz de Fora,JDF,SBJF
+BRA,Ji Paraná,"",SBJI
+BRA,Rio de Janeiro,\N,SBJR
+BRA,Juazeiro do Norte,JDO,SBJU
+BRA,Lages,LAJ,SBLJ
+BRA,Bom Jesus da Lapa,LAZ,SBLP
+BRA,Marabá,MAB,SBMA
+BRA,Maringá,MGF,SBMG
+BRA,Macapá,MCP,SBMQ
+BRA,Mossoró,MVF,SBMS
+BRA,São Paulo,\N,SBMT
+BRA,Manicoré,MNX,SBMY
+BRA,Santo Ângelo,GEL,SBNM
+BRA,Oiapoque,OYK,SBOI
+BRA,Parnaíba,PHB,SBPB
+BRA,Poços de Caldas,POO,SBPC
+BRA,Porto Nacional,"",SDPE
+BRA,Ponta Porã,PMG,SBPP
+BRA,Goiânia,"",SBNV
+BRA,Rondonópolis,ROO,SBRD
+BRA,Rio de Janeiro,SDU,SBRJ
+BRA,Ribeirão Preto,RAO,SBRP
+BRA,São José dos Campos,SJK,SBSJ
+BRA,São Luís,SLZ,SBSL
+BRA,Santarém,STM,SBSN
+BRA,São Paulo,CGH,SBSP
+BRA,São José do Rio Preto,SJP,SBSR
+BRA,Oriximiná,TMT,SBTB
+BRA,Tefé,TFF,SBTF
+BRA,Três Lagoas,"",SBTG
+BRA,Tarauacá,TRQ,SBTK
+BRA,Torres,"",SSTE
+BRA,Tucuruí,TUR,SBTU
+BRA,São Gabriel da Cachoeira,SJL,SBUA
+BRA,Paulo Afonso,PAV,SBUF
+BRA,Uberlândia,UDI,SBUL
+BRA,Vitória,VIX,SBVT
+BRA,Goianá,IZA,SBZM
+BRA,Araras,"",SDAA
+BRA,Adamantina,"",SDAD
+BRA,Angra dos Reis,\N,SDAG
+BRA,Americana,\N,SDAI
+BRA,São Pedro,"",SDAE
+BRA,Bebedouro,"",SDBB
+BRA,Bariri,"",SDBY
+BRA,Capão Bonito,"",SDCA
+BRA,Andradina,"",SDDN
+BRA,Dracena,"",SDDR
+BRA,Presidente Epitácio,"",SDEP
+BRA,Tietê,"",SDET
+BRA,Fernandópolis,"",SDFD
+BRA,Casa Nova,"",SDFX
+BRA,Garça,"",SDGC
+BRA,São Paulo de Olivença,OLC,SDCG
+BRA,Itanhaém,"",SDIM
+BRA,Ituverava,"",SDIV
+BRA,Jaboticabal,"",SDJC
+BRA,São Joaquim da Barra,"",SDJO
+BRA,São João da Boa Vista,"",SDJV
+BRA,Formosa do Rio Preto,"",SDKJ
+BRA,Ibitinga,"",SDIG
+BRA,Leme,"",SDLL
+BRA,Lençóis Paulista,"",SDLP
+BRA,Matão,"",SDLY
+BRA,Maricá,"",SBMI
+BRA,Mococa,"",SDKK
+BRA,Mogi Mirim,"",SDMJ
+BRA,Monte Alto,"",SDMO
+BRA,Novo Horizonte,"",SDNH
+BRA,Nova Mutum,"",SDNM
+BRA,São Manuel,"",SDNO
+BRA,Ourinhos,"",SDOU
+BRA,Mirassol,"",SDMH
+BRA,Mozarlândia,"",SDOV
+BRA,Pindamonhangaba,"",SDPD
+BRA,Penápolis,"",SDPN
+BRA,Presidente Venceslau,"",SDPV
+BRA,Piracicaba,"",SDPW
+BRA,Pirassununga,"",SDPY
+BRA,Rio Claro,"",SDRK
+BRA,Avaré,"",SDRR
+BRA,São Carlos,QSC,SDSC
+BRA,Ourilândia do Norte,OIA,SDOW
+BRA,Tatuí,"",SDTF
+BRA,Tupi Paulista,"",SDTI
+BRA,Paraty,\N,SDTK
+BRA,Tupã,"",SDTP
+BRA,Atibaia,"",SDTB
+BRA,Vera Cruz,"",SDVE
+BRA,Votuporanga,"",SDVG
+BRA,Alenquer,"",SDWQ
+BRA,Alto Paraíso de Goiás,"",SDXF
+BRA,Costa Rica,"",SDXJ
+BRA,Tauá,"",SDZG
+BRA,Catolé do Rocha,"",SIBU
+BRA,Conceição,"",SIBW
+BRA,Paraguaçu Paulista,"",SDUQ
+BRA,Itaporanga,"",SIBZ
+BRA,Cuité,"",SICB
+BRA,Lucas do Rio Verde,"",SILC
+BRA,Monteiro,"",SIBY
+BRA,Araguacema,"",SJAU
+BRA,Santa Inês,"",SJBY
+BRA,Ariquemes,\N,SJOG
+BRA,Quirinópolis,"",SJQN
+BRA,Rio Grande,"",SJRG
+BRA,Araguatins,"",SJGU
+BRA,Terra Santa,"",SJTS
+BRA,Cajazeiras,"",SJZA
+BRA,Araripina,"",SNAB
+BRA,Aragarças,"",SJVO
+BRA,Arcoverde,"",SNAE
+BRA,Janaúba,\N,SNAP
+BRA,Araguari,"",SNAG
+BRA,Três Marias,"",SNAS
+BRA,Aracati,"",SBAC
+BRA,Assis,"",SNAX
+BRA,Barretos,"",SNBA
+BRA,Barra do Corda,"",SNBC
+BRA,Almenara,"",SNAR
+BRA,Bacabal,"",SNBI
+BRA,Muriaé,\N,SNBM
+BRA,Balsas,"",SNBS
+BRA,Barra,"",SNBX
+BRA,Paramirim,"",SNBZ
+BRA,Campo Belo,"",SNCA
+BRA,Campos Sales,"",SNCS
+BRA,Ubaporanga,"",SNCT
+BRA,Colatina,"",SNCX
+BRA,Baixo Guandu,"",SNBG
+BRA,Redenção,RDC,SNDC
+BRA,Divinópolis,DIQ,SNDV
+BRA,Paragominas,"",SNEB
+BRA,Ponte Nova,"",SNCZ
+BRA,Vacaria,"",SNEE
+BRA,Alfenas,"",SNFE
+BRA,Formiga,"",SNFO
+BRA,Frutal,"",SNFU
+BRA,São Félix do Xingu,SXX,SNFX
+BRA,Gilbués,"",SNGB
+BRA,Guadalupe,"",SNGD
+BRA,Bom Jesus,"",SNGG
+BRA,Canavieiras,"",SNED
+BRA,Guaxupé,"",SNGX
+BRA,Serra Talhada,"",SNHS
+BRA,Itaberaba,"",SNIB
+BRA,Irecê,"",SNIC
+BRA,Caetité,"",SNIE
+BRA,Cipó,"",SNIO
+BRA,Garanhuns,"",SNGN
+BRA,Itapetinga,"",SNIP
+BRA,Ipiaú,"",SNIU
+BRA,Jacobina,"",SNJB
+BRA,Feira de Santana,"",SDIY
+BRA,Jequié,"",SNJK
+BRA,Manhuaçu,"",SNJM
+BRA,João Pinheiro,"",SNJP
+BRA,Jequitinhonha,"",SNJQ
+BRA,São João Del Rei,"",SNJR
+BRA,Ibotirama,"",SNIT
+BRA,Conselheiro Lafaiete,\N,SNKF
+BRA,Cachoeiro de Itapemirim,"",SNKI
+BRA,Currais Novos,"",SNKN
+BRA,Corrente,"",SNKR
+BRA,Conceição do Mato Dentro,"",SNKD
+BRA,Linhares,"",SNLN
+BRA,São Lourenço,"",SNLO
+BRA,Paulistana,"",SNLT
+BRA,Monte Alegre,"",SNMA
+BRA,Pirenópolis,"",SNMH
+BRA,Abaeté,"",SNLI
+BRA,Jaíba,"",SNMK
+BRA,Maracás,"",SNMJ
+BRA,Minas Novas,"",SNMN
+BRA,São Mateus,"",SNMX
+BRA,Maraú,"",SNMR
+BRA,São João Nepomuceno,"",SNNE
+BRA,Nanuque,"",SNNU
+BRA,Oeiras,"",SNOE
+BRA,Passos,"",SNOS
+BRA,Oriximiná,ORX,SNOX
+BRA,Pará de Minas,"",SNPA
+BRA,Patrocínio,"",SNPJ
+BRA,Porto de Moz,"",SNMZ
+BRA,Pesqueira,"",SNPQ
+BRA,São Sebastião do Paraíso,"",SNPY
+BRA,Sousa,"",SNQD
+BRA,Paraguaçu,"",SNPU
+BRA,Curvelo,"",SNQV
+BRA,Pirapora,"",SNPX
+BRA,Prado,"",SNRD
+BRA,Remanso,"",SNRM
+BRA,Rio Paranaíba,"",SNRP
+BRA,Mucugê,"",SNQU
+BRA,Oliveira,"",SNRZ
+BRA,Sento Sé,"",SNSE
+BRA,Quixadá,"",SNQX
+BRA,Riachão,"",SNRX
+BRA,Salinópolis,"",SNSM
+BRA,Salinas,"",SNSS
+BRA,Óbidos,"",SNTI
+BRA,Salgueiro,"",SNSG
+BRA,Buritirama,"",SNTQ
+BRA,Patos,"",SNTS
+BRA,Ubá,"",SNUB
+BRA,Piumhi,"",SNUH
+BRA,Araçuaí,"",SNUI
+BRA,Unaí,"",SNUN
+BRA,Santa Maria do Suaçuí,"",SNSI
+BRA,Viçosa,"",SNVC
+BRA,Santa Maria da Vitória,"",SNVD
+BRA,Três Corações,"",SNVI
+BRA,Camocim,"",SNWC
+BRA,Crateús,"",SNWS
+BRA,Caxambu,"",SNXB
+BRA,Teófilo Otoni,TFL,SNTO
+BRA,Almeirim,"",SNYA
+BRA,Ituiutaba,"",SNYB
+BRA,Valença,VAL,SNVB
+BRA,Iturama,"",SNYU
+BRA,Paracatu,\N,SNZR
+BRA,Ibaiti,"",SSAB
+BRA,Arroio Grande,"",SSAE
+BRA,Cruz Alta,"",SSAK
+BRA,Andirá,"",SSAN
+BRA,Apucarana,"",SSAP
+BRA,Passo Fundo,"",SSAQ
+BRA,Blumenau,BNU,SSBL
+BRA,Porto Alegre,"",SSBN
+BRA,Bela Vista,"",SSBV
+BRA,Xique Xique,"",SNXQ
+BRA,Chapadão do Sul,"",SSCD
+BRA,Coxim,"",SSCI
+BRA,Concórdia,CCI,SSCK
+BRA,Pinheiro,"",SNYE
+BRA,Canela,"",SSCN
+BRA,Cornélio Procópio,"",SSCP
+BRA,Casa Branca,"",SSCB
+BRA,Cianorte,"",SSCT
+BRA,Estrela,"",SSEE
+BRA,São Sepé,"",SSEP
+BRA,Espumoso,"",SSEZ
+BRA,Francisco Beltrão,FBE,SSFB
+BRA,Marechal Cândido Rondon,"",SSCR
+BRA,Garibaldi,"",SSGA
+BRA,Guaratuba,"",SSGB
+BRA,Goioerê,"",SSGW
+BRA,Guaíra,"",SSGY
+BRA,Horizontina,"",SSHZ
+BRA,Campo Grande,"",SSIE
+BRA,Ijuí,"",SSIJ
+BRA,Fronteiras,"",SSFL
+BRA,Ibirubá,"",SSIR
+BRA,Joaçaba,JCB,SSJA
+BRA,Jardim,"",SSJI
+BRA,Itaqui,"",SSIQ
+BRA,Campo Grande,"",SSKG
+BRA,Capão da Canoa,"",SSKK
+BRA,Campo Mourão,"",SSKM
+BRA,Cachoeira do Sul,"",SSKS
+BRA,Curitibanos,"",SSKU
+BRA,Carazinho,"",SSKZ
+BRA,São Luiz Gonzaga,"",SSLG
+BRA,Lontras,"",SSLN
+BRA,Júlio de Castilhos,"",SSJK
+BRA,Alegrete,"",SSLT
+BRA,Maracaju,"",SSMJ
+BRA,Manoel Ribas,"",SSMR
+BRA,Loanda,"",SSLO
+BRA,Naviraí,"",SSNB
+BRA,Montenegro,"",SSNG
+BRA,Novo Hamburgo,"",SSNH
+BRA,Nova Prata,"",SSNP
+BRA,Mostardas,\N,SSMT
+BRA,São Miguel do Oeste,SQX,SSOE
+BRA,Nioaque,"",SSNQ
+BRA,Pederneiras,"",SSOI
+BRA,Lavras,"",SSOL
+BRA,Osório,"",SSOS
+BRA,Pato Branco,"",SBPO
+BRA,Paranaguá,"",SSPG
+BRA,Arapongas,"",SSOG
+BRA,Palmeira das Missões,"",SSPL
+BRA,Porto Murtinho,"",SSPM
+BRA,Paranavaí,"",SSPI
+BRA,Palmas,"",SSPS
+BRA,Palotina,"",SSPT
+BRA,Paranaíba,"",SSPN
+BRA,Monte Santo,"",SSQP
+BRA,Castro,"",SSQT
+BRA,Realeza,"",SSRE
+BRA,Castro Alves,"",SSRF
+BRA,Registro,"",SSRG
+BRA,Barreirinhas,"",SSRS
+BRA,São Lourenço do Sul,"",SSRU
+BRA,Rosário do Sul,"",SSRZ
+BRA,Siqueira Campos,"",SSQC
+BRA,Santa Cruz do Sul,"",SSSC
+BRA,Soledade,"",SSSD
+BRA,São Gabriel,"",SSSG
+BRA,São Francisco do Sul,"",SSSS
+BRA,Santiago,"",SSST
+BRA,Sertanópolis,"",SSSZ
+BRA,Três Barras,"",SSTB
+BRA,União da Vitória,"",SSUV
+BRA,Vitória da Conquista,VDC,SBVC
+BRA,Videira,"",SSVI
+BRA,Telêmaco Borba,"",SSVL
+BRA,Veranópolis,"",SSVN
+BRA,Cruz,JJD,SBJE
+BRA,Caçapava do Sul,"",SSWS
+BRA,Xanxerê,"",SSXX
+BRA,Ponta Grossa,"",SBPG
+BRA,São Benedito,"",SWBE
+BRA,São Borja,"",SSSB
+BRA,Campos Belos,"",SWCB
+BRA,Pontes e Lacerda,"",SWBG
+BRA,Costa Marques,CQS,SWCQ
+BRA,Ceres,"",SWCZ
+BRA,Dianópolis,"",SWDN
+BRA,Manaus,\N,SWFN
+BRA,Formosa,"",SWFR
+BRA,Eirunepé,ERN,SWEI
+BRA,Araguaína,AUX,SWGN
+BRA,Água Boa,\N,SWHP
+BRA,São Félix do Araguaia,SXO,SWFX
+BRA,Santo Antônio do Içá,"",SWII
+BRA,Minaçu,"",SWIQ
+BRA,Juína,JIA,SWJN
+BRA,Jataí,"",SWJW
+BRA,Cáceres,CCX,SWKC
+BRA,São Raimundo Nonato,\N,SWKQ
+BRA,Humaitá,HUW,SWHT
+BRA,Catalão,"",SWKT
+BRA,Mineiros,"",SWME
+BRA,Maués,MBZ,SWMW
+BRA,Aruanã,"",SWNH
+BRA,Boca do Acre,"",SWNK
+BRA,Lábrea,LBR,SWLB
+BRA,Anápolis,"",SWNS
+BRA,Niquelândia,"",SWNQ
+BRA,Porto dos Gaúchos,"",SWPG
+BRA,Poconé,"",SWPK
+BRA,Pires do Rio,"",SWPR
+BRA,Primavera do Leste,\N,SWPY
+BRA,Posse,"",SWPZ
+BRA,Porto Velho,"",SWRO
+BRA,Sinop,"",SBSI
+BRA,Paraíso do Tocantins,"",SWTO
+BRA,Tangará da Serra,TGQ,SWTS
+BRA,Taguatinga,"",SWTY
+BRA,São Miguel do Araguaia,"",SWUA
+BRA,Cláudio,"",SWUD
+BRA,Luziânia,"",SWUZ
+BRA,Porangatu,"",SWWA
+BRA,Uruaçu,"",SWWU
+BRA,Matupá,"",SWXM
+BRA,Lins,"",SWXQ
+BRA,Nova Xavantina,"",SWXV
+BRA,Apuí,\N,SWYN
+BRA,São Roque,"",SBJH
+BRA,Santa Rita do Sapucaí,"",SJXI
+BRA,Correia Pinto,"",SNCP
+BRA,Porto Alegre do Norte,"",SDH2
+BRA,Ouro Fino,"",SNOF
+BRA,Nova Andradina,"",SDK7
+BRA,Morrinhos,"",SJ4Y
+BRA,Campo Novo do Parecis,"",SI68
+BRA,Sobral,"",SN6L
+BRA,Campos dos Goytacazes,"",SBFS
+BRA,Bom Jesus da Lapa,"",SN3Y
+BRA,Ipanema,"",SJO7
+BRA,Senhor do Bonfim,"",SJO9
+BRA,São João da Barra,"",SBPW
+BRA,Bento Gonçalves,"",SSBG
+BRA,São Joaquim,"",SND4
+BRA,Dionísio Cerqueira,"",SND6
+BRA,Canoas,QNS,SBCO

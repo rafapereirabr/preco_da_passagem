@@ -1,13 +1,18 @@
-painel de grafico interativo
-https://albert-rapp.de/posts/ggplot2-tips/17_ggiraph/17_ggiraph.html
-https://stackoverflow.com/questions/63358511/create-interactive-bar-chart-with-shared-data-filtered-by-time-range
-https://stackoverflow.com/questions/52321695/filter-a-plotly-line-chart-based-on-categorical-variable
+# painel de grafico interativo
+# https://albert-rapp.de/posts/ggplot2-tips/17_ggiraph/17_ggiraph.html
+# https://stackoverflow.com/questions/63358511/create-interactive-bar-chart-with-shared-data-filtered-by-time-range
+# https://stackoverflow.com/questions/52321695/filter-a-plotly-line-chart-based-on-categorical-variable
 
 
 # https://www.anac.gov.br/acesso-a-informacao/dados-abertos/areas-de-atuacao/voos-e-operacoes-aereas/tarifas-aereas-domesticas/46-tarifas-aereas-domesticas
 
+# get latest month available
+latest_date <- flightsbr:::latest_airfares_date(dom = FALSE)
+last_two_monts <- (latest_date-1):latest_date
+
+
 df_int <- flightsbr::read_airfares(
-  date = 202406,
+  date = last_two_monts,
   domestic = FALSE
   ) |>
   janitor::clean_names()
@@ -15,17 +20,22 @@ df_int <- flightsbr::read_airfares(
 # filter classe economica Y
 df_int <- df_int[ classe_volta == "Y", ]
 
+# filter two-way ticket
+df_int <- df_int[ origem == retorno, ]
 
 # fix numeric columns
 df_int[, tarifa := gsub(',', '.', tarifa)]
 df_int[, tarifa := as.numeric(tarifa)]
 df_int[, assentos := as.numeric(assentos)]
 
+##########################################
 
-
-
-
-
+# temp identify BRA origin
+df_int[, origem := paste0('BRA_', origem)]
+       
+# create unique id for each OD pair
+# so that A-B has the same id as B-A
+# Sort each pair so that the smaller value is always the first
 df_int[, od_pair := paste0(pmin(origem, destino), "-", pmax(origem, destino))]
 df_int[, id := .GRP, by = od_pair]
 
@@ -66,6 +76,7 @@ df100 <- df[, .(passageiros = sum(passageiros),
 
 # bring OD pair info back
 df100[df_int_100, on='id', od_pair := i.od_pair ]
+df100[, od_pair := gsub('BRA_', '', od_pair)]
 df100[, origem := substring(od_pair, 1, 4)]
 df100[, destino := substring(od_pair, 6, 9)]
 
@@ -73,12 +84,7 @@ head(df100)
 
 
 # add airport information
-airports <- data.table::fread('./data-raw/int_airports.csv')
-
-# head(airports)
-
-airports[df_airport_codes, on=c('codigo_oaci'='icao_code'), iata:= i.iata_code]
-
+airports <- data.table::fread('./data-raw/airports_int.csv')
 
 df100[airports,
       on=c('origem'='icao_code'),
