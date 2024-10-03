@@ -1,8 +1,19 @@
+painel de grafico interativo
+https://albert-rapp.de/posts/ggplot2-tips/17_ggiraph/17_ggiraph.html
+https://stackoverflow.com/questions/63358511/create-interactive-bar-chart-with-shared-data-filtered-by-time-range
+https://stackoverflow.com/questions/52321695/filter-a-plotly-line-chart-based-on-categorical-variable
+
+
+# https://www.anac.gov.br/acesso-a-informacao/dados-abertos/areas-de-atuacao/voos-e-operacoes-aereas/tarifas-aereas-domesticas/46-tarifas-aereas-domesticas
+
 df_int <- flightsbr::read_airfares(
   date = 202406,
   domestic = FALSE
   ) |>
   janitor::clean_names()
+
+# filter classe economica Y
+df_int <- df_int[ classe_volta == "Y", ]
 
 
 # fix numeric columns
@@ -38,8 +49,8 @@ df <- df_int_100[, .(passageiros = sum(assentos),
                      media = weighted.mean(x = tarifa, w=assentos),
                      q75 = Hmisc::wtd.quantile(x = tarifa, weights=assentos,probs = 0.75),
                      maxima = max(tarifa)
-),
-by = .(id, ranking, origem, destino)][order(ranking)]
+                     ),
+                 by = .(id, ranking, origem, destino)][order(ranking)]
 
 
 df100 <- df[, .(passageiros = sum(passageiros),
@@ -48,8 +59,8 @@ df100 <- df[, .(passageiros = sum(passageiros),
                 media = sum(media),
                 q75 = sum(q75)
                 #, maxima = sum(maxima)
-),
-by = .(id, ranking)][order(ranking)]
+                ),
+            by = .(id, ranking)][order(ranking)]
 
 
 

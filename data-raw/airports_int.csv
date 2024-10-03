@@ -1,0 +1,125 @@
+country,city_name,iata_code,icao_code
+BRA,São Paulo,GRU,SBGR
+BRA,Rio de Janeiro,GIG,SBGL
+BRA,Brasília,BSB,SBBR
+BRA,Belo Horizonte,CNF,SBCF
+BRA,Porto Alegre,POA,SBPA
+BRA,Salvador,SSA,SBSV
+BRA,Fortaleza,FOR,SBFZ
+BRA,Recife,REC,SBRF
+BRA,Curitiba,CWB,SBCT
+BRA,Manaus,MAO,SBEG
+BRA,Natal,NAT,SBSG
+BRA,Belém,BEL,SBBE
+BRA,Florianópolis,FLN,SBFL
+BRA,Campo Grande,CGR,SBCG
+BRA,Foz do Iguaçu,IGU,SBFI
+BRA,Maceió,MCZ,SBMO
+BRA,João Pessoa,JPA,SBJP
+BRA,Goiânia,GYN,SBGO
+BRA,Cuiabá,CGB,SBCY
+USA,Atlanta,ATL,KATL
+CHN,Beijing,PEK,ZBAA
+UAE,Dubai,DXB,OMDB
+USA,Los Angeles,LAX,KLAX
+JAP,Tokyo,HND,RJTT
+GBR,London,LHR,EGLL
+USA,Chicago,ORD,KORD
+FRA,Paris,CDG,LFPG
+HKG,Hong Kong,HKG,VHHH
+NLD,Amsterdam,AMS,EHAM
+DEU,Frankfurt,FRA,EDDF
+KOR,Seoul,ICN,RKSI
+SGP,Singapore,SIN,WSSS
+TUR,Istanbul,IST,LTBA
+USA,New York,JFK,KJFK
+THA,Bangkok,BKK,VTBS
+CHN,Guangzhou,CAN,ZGGG
+ESP,Madrid,MAD,LEMD
+AUS,Sydney,SYD,YSSY
+CHN,Shanghai,PVG,ZSPD
+USA,Dallas,DFW,KDFW
+USA,Miami,MIA,KMIA
+DEU,Munich,MUC,EDDM
+CAN,Toronto,YYZ,CYYZ
+IDN,Jakarta,CGK,WIII
+MYS,Kuala Lumpur,KUL,WMKK
+ITA,Rome,FCO,LIRF
+QAT,Doha,DOH,OTHH
+IND,Delhi,DEL,VIDP
+CHE,Zurich,ZRH,LSZH
+MEX,Mexico City,MEX,MMMX
+ESP,Barcelona,BCN,LEBL
+DNK,Copenhagen,CPH,EKCH
+RUS,Moscow,SVO,UUEE
+AUT,Vienna,VIE,LOWW
+BEL,Brussels,BRU,EBBR
+SWE,Stockholm,ARN,ESSA
+IRL,Dublin,DUB,EIDW
+PRT,Lisbon,LIS,LPPT
+AUS,Melbourne,MEL,YMML
+PHL,Manila,MNL,RPLL
+JPN,Osaka,KIX,RJBB
+ZAF,Johannesburg,JNB,FAOR
+FIN,Helsinki,HEL,EFHK
+NOR,Oslo,OSL,ENGM
+GRC,Athens,ATH,LGAV
+IND,Bangalore,BLR,VOBL
+COL,Bogotá,BOG,SKBO
+ARG,Buenos Aires,EZE,SAEZ
+POL,Warsaw,WAW,EPWA
+DEU,Berlin,BER,EDDB
+CHL,Santiago,SCL,SCEL
+AUS,Brisbane,BNE,YBBN
+TUR,Istanbul (Sabiha),SAW,LTFJ
+IND,Mumbai,BOM,VABB
+PER,Lima,LIM,SPJC
+ARE,Abu Dhabi,AUH,OMAA
+CHN,Chengdu,CTU,ZUUU
+CHN,Shenzhen,SZX,ZGSZ
+USA,Denver,DEN,KDEN
+USA,San Francisco,SFO,KSFO
+USA,Washington D.C.,IAD,KIAD
+USA,Boston,BOS,KBOS
+USA,Seattle,SEA,KSEA
+USA,Houston,IAH,KIAH
+USA,Las Vegas,LAS,KLAS
+USA,Phoenix,PHX,KPHX
+USA,Orlando,MCO,KMCO
+USA,Philadelphia,PHL,KPHL
+USA,San Diego,SAN,KSAN
+USA,Charlotte,CLT,KCLT
+USA,Detroit,DTW,KDTW
+USA,Minneapolis,MSP,KMSP
+USA,Fort Lauderdale,FLL,KFLL
+USA,Tampa,TPA,KTPA
+USA,Salt Lake City,SLC,KSLC
+USA,Portland,PDX,KPDX
+DEU,Stuttgart,STR,EDDS
+DEU,Hamburg,HAM,EDDH
+DEU,Düsseldorf,DUS,EDDL
+USA,Honolulu,HNL,PHNL
+SAU,Riyadh,RUH,OERK
+BHR,Bahrain,BAH,OBBI
+JOR,Amman,AMM,OJAI
+CZE,Prague,PRG,LKPR
+EGY,Cairo,CAI,HECA
+HUN,Budapest,BUD,LHBP
+LUX,Luxembourg,LUX,ELLX
+NGA,Lagos,LOS,DNMM
+ZAF,Cape Town,CPT,FACT
+OMN,Muscat,MCT,OOMS
+CUB,Havana,HAV,MUHA
+BGR,Sofia,SOF,LBSF
+ROU,Bucharest,OTP,LROP
+ISR,Tel Aviv,TLV,LLBG
+LBN,Beirut,BEY,OLBA
+KEN,Nairobi,NBO,HKJK
+MAR,Rabat,RBA,GMME
+MAR,Casablanca,CMN,GMMN
+ETH,Addis Ababa,ADD,HAAB
+ZMB,Lusaka,LUN,FLLS
+MDG,Antananarivo,TNR,FMMI
+MLT,Malta,MLA,LMML
+TUN,Tunis,TUN,DTTA
+DZA,Algiers,ALG,DAAG
