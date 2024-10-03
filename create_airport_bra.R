@@ -140,5 +140,23 @@ airports_br$country <- "BRA"
 
 setcolorder(airports_br, c('country', 'city_name', 'iata_code', 'icao_code'))
 
+# 
+# # get missing info
+# airports_df <- airportr::airports
+# 
+# airports_df <- airports_df |>
+#   select(country = "Country Code (Alpha-3)",
+#          city_name  = "City"  ,
+#          iata_code = "IATA" ,
+#          icao_code= "ICAO")
+# 
+# airports_df <- filter(airports_df, country == "BRA")
+# df2 <- rbind(df, missing_airports)
+# df2 <- unique(df2)
+# 
+# df2 <- filter(df2, iata_code != "\\N")
+
+
 # save table
 data.table::fwrite(airports_br, './data-raw/airports_bra.csv', encoding = 'UTF-8')
+arrow::write_parquet(airports_br, './data-raw/airports_bra.parquet')
