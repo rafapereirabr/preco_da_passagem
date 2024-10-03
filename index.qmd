@@ -82,144 +82,15 @@ df100[, origem := substring(od_pair, 1, 4)]
 df100[, destino := substring(od_pair, 6, 9)]
 
 # add airport information
-airports <- flightsbr::read_airports(type = 'public') |>
-  janitor::clean_names() |>
-  dplyr::select(c('codigo_oaci','municipio_atendido'))
-
-# manually add canoas airport
-airports <- rbind(airports, 
-                   data.frame(codigo_oaci='SBCO', 
-                              municipio_atendido='Canoas')
-                   )
-# head(airports)
-
-
-df_airport_codes <- dplyr::tribble(
-  ~oaci, ~iata,
-  "SBAM",	"MCP",
-  "SNAL",	"APQ",
-  "SWBC",	"BAZ",
-  "SBBE",	"BEL",
-  "SBCF",	"CNF",
-  "SBBH",	"PLU",
-  "SBBV",	"BVB",
-  "SBBR",	"BSB",
-  "SBCD",	"CFC",
-  "SBKP",	"VCP",
-  "SDAM",	"CPQ",
-  "SNRU",	"CAU",
-  "SWCA",	"CAF",
-  "SWKO",	"CIZ",
-  "SBAA",	"CDJ",
-  "SBCZ",	"CZS",
-  "SBBI",	"BFH",
-  "SBCT",	"CWB",
-  "SWFJ",	"FEJ",
-  "SBFL",	"FLN",
-  "SBFZ",	"FOR",
-  "SBFI",	"IGU",
-  "SBZM",	"IZA",
-  "SBGO",	"GYN",
-  "SBGR",	"GRU",
-  "SBIZ",	"IMP",
-  "SBJE",	"JJD",
-  "SBJV",	"JOI",
-  "SBJP",	"JPA",
-  "SBJF",	"JDF",
-  "SBJD",	"QDV",
-  "SBMQ",	"MCP",
-  "SBEG",	"MAO",
-  "SBMO",	"MCZ",
-  "SBMS",	"MVF",
-  "SBNF",	"NVT",
-  "SBSG",	"NAT",
-  "SBPB",	"PHB",
-  "SSZW",	"PGZ",
-  "SBPA",	"POA",
-  "SBPV",	"PVH",
-  "SBRF",	"REC",
-  "SBRP",	"RAO",
-  "SBRB",	"RBR",
-  "SBRJ",	"SDU",
-  "SBGL",	"GIG",
-  "SBRD",	"ROO",
-  "SBSM",	"RIA",
-  "SBST",	"SSZ",
-  "SBSV",	"SSA",
-  "SDSC",	"QSC",
-  "SBSL",	"SLZ",
-  "SBSP",	"CGH",
-  "SWSN",	"ZMD",
-  "SDCO",	"SOD",
-  "SBTT",	"TBT",
-  "SBTK",	"TRQ",
-  "SBTF",	"TFF",
-  "SBTE",	"THE",
-  "SBBC",	"QAV",
-  "SBPP",	"PMG",
-  "SBCR",	"CMG",
-  "SBBG",	"BGX",
-  "SBCH",	"XAP",
-  "SBDN",	"PPB",
-  "SBHT",	"ATM",
-  "SBAN",	"APS",
-  "SBAU",	"ARU",
-  "SBAQ",	"AQA",
-  "SBCB",	"CFB",
-  "SBCG",	"CGR",
-  "SBCA",	"CAC",
-  "SBME",	"MEA",
-  "SBPK",	"PET",
-  "SBPJ",	"PMW",
-  "SBPC",	"POO",
-  "SBSJ",	"SJK",
-  "SBQV",	"VDC",
-  "SBMG", "MGF", # maringa
-  "SBLO", "LDB", # londrina
-  "SBIL", "IOS", # ilheus
-  "SBPS", 'BPS', # portoseguro  
-  "SBSR", 'SJP', # sao jose do rio preto
-  "SBMK", 'MOC', # montes calros
-  "SBCO", "QNS", # canoas
-  "SBCY", "CGB", # cuiaba
-  "SBPL", "PNZ", # petrolina
-  "SBVT", "VIX", # vitoria
-  "SBVC", "VDC", # vitoria da consquista
-  "SBJU", "JDO", # juazeiro do norte
-  "SBAR", "AJU", # aracaju
-  "SBSN", "STM"  # santarem
-)
-
-data.table::setDT(df_airport_codes)
-
-airports[df_airport_codes, on=c('codigo_oaci'='oaci'), iata:= i.iata]
-
+airports <- data.table::fread('./data-raw/airports_bra.csv', encoding = 'UTF-8')
 
 df100[airports,
-   on=c('origem'='codigo_oaci'),
-   c('orig_iata', 'orig_muni') := list(i.iata, i.municipio_atendido )]
+   on=c('origem'='icao_code'),
+   c('orig_iata', 'orig_muni') := list(i.iata_code, i.city_name )]
 
 df100[airports,
-   on=c('destino'='codigo_oaci'),
-   c('dest_iata', 'dest_muni') := list(i.iata, i.municipio_atendido )]
-
-# camel case for names 666666666666666666666
-df100[, orig_muni := snakecase::to_title_case(orig_muni, sep_out=' ')]
-df100[, dest_muni := snakecase::to_title_case(dest_muni, sep_out=' ')]
-
-df100[, orig_muni := gsub(" De ", " de ", orig_muni)]
-df100[, orig_muni := gsub(" Da ", " da ", orig_muni)]
-df100[, orig_muni := gsub(" Do ", " do ", orig_muni)]
-df100[, orig_muni := gsub(" Das ", " das ", orig_muni)]
-df100[, orig_muni := gsub(" Dos ", " dos ", orig_muni)]
-
-df100[, dest_muni := gsub(" De ", " de ", dest_muni)]
-df100[, dest_muni := gsub(" Da ", " da ", dest_muni)]
-df100[, dest_muni := gsub(" Do ", " do ", dest_muni)]
-df100[, dest_muni := gsub(" Das ", " das ", dest_muni)]
-df100[, dest_muni := gsub(" Dos ", " dos ", dest_muni)]
-
-
+   on=c('destino'='icao_code'),
+   c('dest_iata', 'dest_muni') := list(i.iata_code, i.city_name )]
 
 # reorganize origem and destino columns
 df100[, De := paste0(orig_muni," (",orig_iata,")")]
