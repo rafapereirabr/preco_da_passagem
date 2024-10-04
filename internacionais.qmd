@@ -138,7 +138,7 @@ df_output <- df100[order(ranking)] |>
 ```
 
 ::: {.callout-note appearance="simple"}
-Tabela com o preço da passagem área internacional (*classe econômica* ida + volta) dos 100 trechos com maior número de passageiros do Brasil. Valores em `R$` atualizados mensalmente a partir de todas passagens comercializadas nos dois meses mais recentes disponíveis: `r last_two_monts[1]` e `r last_two_monts[2]`.
+Tabela com o preço da passagem área internacional (*classe econômica* ida + volta) dos 100 trechos com maior número de passageiros do Brasil. Valores em `US$` atualizados mensalmente a partir de todas passagens comercializadas nos dois meses mais recentes disponíveis: `r last_two_monts[1]` e `r last_two_monts[2]`.
 :::
 
 
