@@ -4,7 +4,7 @@ from: markdown+emoji
 
 # Sobre
 
-**Nota**: Cada par origem-destino é ordenado meramente por ordem alfabética. Assim, o valor da passagem de ida e volta "De: Rio de Janeiro (SDU)	Para: São Paulo (CGH)" pode ser igualmente lido como o preço da viagem de ida e volta no sentido inverso "De: São Paulo (CGH)	Para: Rio de Janeiro (SDU)".
+**Nota sobre vôos nacionais**: Cada par origem-destino é ordenado meramente por ordem alfabética. Assim, o valor da passagem de ida e volta "De: Rio de Janeiro (SDU)	Para: São Paulo (CGH)" pode ser igualmente lido como o preço da viagem de ida e volta no sentido inverso "De: São Paulo (CGH)	Para: Rio de Janeiro (SDU)".
 
 <img align="right" src="images/logo_flightsbr.png" alt="logo" width="300" style="padding: 20px; display: block; border: none;"> Análise gerada a partir de dados oficiais da ANAC. Dados extraídos com o pacote [**{flightsbr}**](https://ipeagit.github.io/flightsbr/) e processados em R.
 

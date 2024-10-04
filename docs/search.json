@@ -4,7 +4,7 @@
     "href": "sobre.html",
     "title": "Sobre",
     "section": "",
-    "text": "Sobre\nNota: Cada par origem-destino é ordenado meramente por ordem alfabética. Assim, o valor da passagem de ida e volta “De: Rio de Janeiro (SDU) Para: São Paulo (CGH)” pode ser igualmente lido como o preço da viagem de ida e volta no sentido inverso “De: São Paulo (CGH) Para: Rio de Janeiro (SDU)”.\n Análise gerada a partir de dados oficiais da ANAC. Dados extraídos com o pacote {flightsbr} e processados em R.\n\nAutor: Rafael H. M. Pereira  Coordenador de Ciência de Dados  Instituto de Pesquisa Econômica Aplicada (Ipea)  Website | Google Scholar | Twitter | Linkedin | BlueSky"
+    "text": "Sobre\nNota sobre vôos nacionais: Cada par origem-destino é ordenado meramente por ordem alfabética. Assim, o valor da passagem de ida e volta “De: Rio de Janeiro (SDU) Para: São Paulo (CGH)” pode ser igualmente lido como o preço da viagem de ida e volta no sentido inverso “De: São Paulo (CGH) Para: Rio de Janeiro (SDU)”.\n Análise gerada a partir de dados oficiais da ANAC. Dados extraídos com o pacote {flightsbr} e processados em R.\n\nAutor: Rafael H. M. Pereira  Coordenador de Ciência de Dados  Instituto de Pesquisa Econômica Aplicada (Ipea)  Website | Google Scholar | Twitter | Linkedin | BlueSky"
   },
   {
     "objectID": "index.html",
